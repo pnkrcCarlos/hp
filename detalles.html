@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Detalles</title>
 
     <!--Imports-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -27,169 +27,171 @@
             <a class="navbar-brand" href="#">Logo</a>
         </div>
     </header>
+    <main>
+        <div class="container">
+            <p></p>
 
-    <div class="container">
-        <p></p>
+            <h1>Detalles del alumno</h1>
 
-        <h1>Detalles del alumno</h1>
+            <div class="row">
+                <!--Form principal con datos de alumno-->
+                <div class="col col-md-8">
 
-        <div class="row">
-            <!--Form principal con datos de alumno-->
-            <div class="col col-md-8">
+                    <form action="">
+                        <div class="form-group">
 
-                <form action="">
-                    <div class="form-group">
-
-                        <p></p>
-                        <div class="row">
-                            <div class="col">
-                                <label for="inputNombre">Nombre</label>
-                                <input type="text" class="form-control" placeholder="Nombre" id="inputNombre">
+                            <p></p>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="inputNombre">Nombre</label>
+                                    <input type="text" class="form-control" placeholder="Nombre" id="inputNombre">
+                                </div>
+                                <div class="col">
+                                    <label for="inputApellidos">Apellidos</label>
+                                    <input type="text" class="form-control" placeholder="Apellidos" id="inputApellidos">
+                                </div>
                             </div>
-                            <div class="col">
-                                <label for="inputApellidos">Apellidos</label>
-                                <input type="text" class="form-control" placeholder="Apellidos" id="inputApellidos">
+
+                            <p></p>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="inputCI">Cédula de identidad</label>
+                                    <input type="text" class="form-control" placeholder="0.000.000-0" id="inputCI">
+                                </div>
+                                <div class="col">
+                                    <label for="inputFechaNacimiento">Fecha de nacimiento</label>
+                                    <input type="date" class="form-control" placeholder="DD/MM/AAAA"
+                                        id="inputFechaNacimiento">
+                                </div>
+                            </div>
+
+                            <p></p>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="inputDomicilio">Domicilio</label>
+                                    <input type="text" class="form-control" placeholder="Domicilio" id="inputDomicilio">
+                                </div>
+                                <div class="col">
+                                    <label for="inputLugarNacimiento">Lugar de nacimiento</label>
+                                    <input type="text" class="form-control"
+                                        placeholder="Localidad, Departamento [, País]" id="inputLugarNacimiento">
+                                </div>
                             </div>
                         </div>
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </form>
+                </div>
+                <div class="col col-md-4">
+                    asd
+                </div>
 
-                        <p></p>
-                        <div class="row">
-                            <div class="col">
-                                <label for="inputCI">Cédula de identidad</label>
-                                <input type="text" class="form-control" placeholder="0.000.000-0" id="inputCI">
-                            </div>
-                            <div class="col">
-                                <label for="inputFechaNacimiento">Fecha de nacimiento</label>
-                                <input type="date" class="form-control" placeholder="DD/MM/AAAA"
-                                    id="inputFechaNacimiento">
-                            </div>
-                        </div>
-
-                        <p></p>
-                        <div class="row">
-                            <div class="col">
-                                <label for="inputDomicilio">Domicilio</label>
-                                <input type="text" class="form-control" placeholder="Domicilio" id="inputDomicilio">
-                            </div>
-                            <div class="col">
-                                <label for="inputLugarNacimiento">Lugar de nacimiento</label>
-                                <input type="text" class="form-control" placeholder="Localidad, Departamento [, País]"
-                                    id="inputLugarNacimiento">
-                            </div>
+            </div>
+            <!--row-->
+            <p></p>
+            <div class="">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="responsables-tab" data-toggle="tab" href="#responsables"
+                            role="tab" aria-controls="responsables" aria-selected="true">Responsables</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="plan-tab" data-toggle="tab" href="#plan" role="tab" aria-controls="plan"
+                            aria-selected="false">Plan de pagos</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="cuotas-tab" data-toggle="tab" href="#cuotas" role="tab"
+                            aria-controls="cuotas" aria-selected="false">Cuotas</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="responsables" role="tabpanel"
+                        aria-labelledby="responsables-tab">
+                        <div class="container">
+                            <table class="table table-borderless table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First</th>
+                                        <th scope="col">Last</th>
+                                        <th scope="col">Handle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Guardar</button>
-                </form>
-            </div>
-            <div class="col col-md-4">
-                asd
-            </div>
+                    <div class="tab-pane fade" id="plan" role="tabpanel" aria-labelledby="plan-tab">
+                        <div class="container">
+                            que tal
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="cuotas" role="tabpanel" aria-labelledby="cuotas-tab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <table class="table table-sm table-borderless table-hover table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First</th>
+                                                <th scope="col">Last</th>
+                                                <th scope="col">Handle</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-2">
+                                    <p></p>
+                                    <a class="btn btn-primary">Nuevo pago</a>
+                                </div>
+                            </div>
 
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!--row-->
-        <p></p>
-        <div class="">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link active" id="responsables-tab" data-toggle="tab" href="#responsables" role="tab"
-                        aria-controls="responsables" aria-selected="true">Responsables</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="plan-tab" data-toggle="tab" href="#plan" role="tab" aria-controls="plan"
-                        aria-selected="false">Plan de pagos</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="cuotas-tab" data-toggle="tab" href="#cuotas" role="tab"
-                        aria-controls="cuotas" aria-selected="false">Cuotas</a>
-                </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="responsables" role="tabpanel"
-                    aria-labelledby="responsables-tab">
-                    <div class="container">
-                        <table class="table table-borderless table-hover">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="plan" role="tabpanel" aria-labelledby="plan-tab">
-                    <div class="container">
-                        que tal
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="cuotas" role="tabpanel" aria-labelledby="cuotas-tab">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10">
-                                <table class="table table-sm table-borderless table-hover table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">First</th>
-                                            <th scope="col">Last</th>
-                                            <th scope="col">Handle</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="col-md-2">
-                                <p></p>
-                                <a class="btn btn-primary">Nuevo pago</a>
-                            </div>
-                        </div>
+    </main>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 </body>
 
