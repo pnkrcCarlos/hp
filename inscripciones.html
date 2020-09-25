@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Principal</title>
+    <title>Inscripciones</title>
 
     <!--Imports-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -35,10 +35,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="/principal.html">Alumnos</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="/inscripciones.html">Inscripciones</a>
                     </li>
                     <li class="nav-item">
@@ -61,7 +61,7 @@
             <p></p>
 
             <h1>
-                Alumnos
+                Inscripciones
             </h1>
             <form>
                 <div class="form-row">
@@ -93,34 +93,55 @@
                             <tr>
                                 <th scope="col">Apellido</th>
                                 <th scope="col">Nombre</th>
-                                <th scope="col">Cuotas pagas</th>
-                                <th scope="col">Grupo</th>
+                                <th scope="col">Entrevista</th>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Datos</th>
+                                <th scope="col">Responsables</th>
+                                <th scope="col">Documentos</th>
+                                <th scope="col">Plan</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>Natal</td>
                                 <td>Matías</td>
-                                <td>7/10</td>
-                                <td>4to Blanco</td>
+                                <td>7/Jul</td>
+                                <td>Incompleta</td>
+                                <td><span class="badge badge-pill badge-danger">2</span></td>
+                                <td><span class="badge badge-pill badge-success">0</span></td>
+                                <td><span class="badge badge-pill badge-danger">1</span></td>
+                                <td><span class="badge badge-pill badge-success">0</span></td>
                             </tr>
                             <tr>
                                 <td>Ortíz</td>
                                 <td>Juan</td>
-                                <td>10/14</td>
-                                <td>4to Blanco</td>
+                                <td>13/Ene</td>
+                                <td>Incompleta</td>
+                                <td><span class="badge badge-pill badge-danger">1</span></td>
+                                <td><span class="badge badge-pill badge-success">0</span></td>
+                                <td><span class="badge badge-pill badge-danger">2</span> <span
+                                        class="badge badge-pill badge-warning">1</span></td>
+                                <td><span class="badge badge-pill badge-danger">1</span></td>
                             </tr>
                             <tr>
                                 <td>Pankrac</td>
                                 <td>Carlos</td>
-                                <td>9/12</td>
-                                <td>4to Blanco</td>
+                                <td>14/Feb</td>
+                                <td>Puede cursar</td>
+                                <td><span class="badge badge-pill badge-success">0</span></td>
+                                <td><span class="badge badge-pill badge-success">0</span></td>
+                                <td><span class="badge badge-pill badge-warning">1</span></td>
+                                <td><span class="badge badge-pill badge-success">0</span></td>
                             </tr>
-                            <tr class="table-danger">
+                            <tr>
                                 <td>Rivera</td>
                                 <td>Guillermo</td>
-                                <td>0/14</td>
-                                <td>3ro Celeste</td>
+                                <td>1/Mar</td>
+                                <td>Falta plan</td>
+                                <td><span class="badge badge-pill badge-success">0</span></td>
+                                <td><span class="badge badge-pill badge-success">0</span></td>
+                                <td><span class="badge badge-pill badge-success">0</span></td>
+                                <td><span class="badge badge-pill badge-danger">1</span></td>
                             </tr>
                         </tbody>
                     </table>
@@ -129,9 +150,7 @@
                     <p>
                     </p>
                     <a href="/nueva_inscripcion.html" class="btn btn-sm btn-block btn-secondary">Inscribir alumno</a>
-                    <a href="/detalles.html" class="btn btn-sm btn-block btn-secondary">Ver detalles</a>
-                    <a href="#" class="btn btn-sm btn-block btn-secondary">Agregar pago</a>
-
+                    <a href="/nueva_inscripcion.html" class="btn btn-sm btn-block btn-secondary">Ver detalles</a>
                 </div>
             </div>
         </div>
