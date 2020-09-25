@@ -7,6 +7,7 @@
     <title>Nueva inscripción</title>
 
     <!--Imports-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -50,28 +51,26 @@
         </div>
     </header>
 
-    <main>
+    <main class="my-3">
         <div class="container">
-            <p></p>
-
             <h1>Inscripción de nuevo alumno</h1>
             <div class="row mt-3">
-                <div class="col col-md-12">
+                <div class="col-md-12">
 
                     <form class="form">
                         <div class="form-row">
-                            <div class="form-group col-md-4">
+                            <div class="form-group col-lg-4">
                                 <label for="fecha_inicio">Fecha de inicio de la inscripción</label>
                                 <input type="date" name="fecha_inicio" id="fecha_inicio" class="form-control" disabled>
                             </div>
-                            <div class="form-group col-md-4">
+                            <div class="form-group col-lg-4">
                                 <label for="estado">Estado de inscripción</label>
                                 <select name="estado" id="estado" class="form-control custom-select" disabled>
                                     <option value="incompleta">Incompleta</option>
                                     <option value="completa">Completa</option>
                                 </select>
                             </div>
-                            <div class="form-group col-md-4">
+                            <div class="form-group col-lg-4">
                                 <label for="fecha_entrevista">Fecha de entrevista</label>
                                 <input type="date" name="fecha_entrevista" id="fecha_entrevista" class="form-control">
                             </div>
@@ -82,23 +81,27 @@
             </div>
             <hr>
             <div class="row mt-3">
-                <div class="col col-md-12">
+                <div class="col-md-12">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <a class="nav-link active" id="alumno-tab" data-toggle="tab" href="#alumno" role="tab"
-                                aria-controls="alumno" aria-selected="true">Alumno</a>
+                                aria-controls="alumno" aria-selected="true">Alumno <span
+                                    class="badge badge-pill badge-success">0</span></a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" id="responsables-tab" data-toggle="tab" href="#responsables" role="tab"
-                                aria-controls="responsables" aria-selected="false">Responsables</a>
+                                aria-controls="responsables" aria-selected="false">Responsables <span
+                                    class="badge badge-pill badge-danger">1</span></a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" id="archivos-tab" data-toggle="tab" href="#archivos" role="tab"
-                                aria-controls="archivos" aria-selected="false">Archivos</a>
+                                aria-controls="archivos" aria-selected="false">Archivos <span
+                                    class="badge badge-pill badge-warning">1</span></a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" id="plan-tab" data-toggle="tab" href="#plan" role="tab"
-                                aria-controls="plan" aria-selected="false">Plan de pagos</a>
+                                aria-controls="plan" aria-selected="false">Plan de pagos <span
+                                    class="badge badge-pill badge-success">0</span></a>
                         </li>
 
                     </ul>
@@ -107,7 +110,7 @@
                             aria-labelledby="alumno-tab">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col col-md-12">
+                                    <div class="col-md-12">
                                         <form action="" class="form">
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
@@ -185,12 +188,12 @@
                                                 <div class="form-group col-md-6">
                                                     <label for="matricula_acordada">Matrícula acordada</label>
                                                     <input type="input" name="matricula_acordada"
-                                                        id="matricula_acordada" class="form-control">
+                                                        id="matricula_acordada" class="form-control text-right">
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label for="anualidad_acordada">Anualidad acordada</label>
                                                     <input type="input" name="anualidad_acordada"
-                                                        id="anualidad_acordada" class="form-control">
+                                                        id="anualidad_acordada" class="form-control text-right">
                                                 </div>
                                             </div>
                                         </form>
@@ -198,7 +201,7 @@
                                 </div>
                                 <hr>
                                 <div class="row">
-                                    <div class="col col-md-6">
+                                    <div class="col-md-6">
                                         <h2>Plan de pagos</h2>
                                         <form action="" class="form">
                                             <div class="form-row">
@@ -234,18 +237,120 @@
                                                 <div class="form-group col-md-6">
                                                     <label for="matricula">Matrícula base</label>
                                                     <input type="input" name="matricula" id="matricula"
-                                                        class="form-control" value="$ 60.000">
+                                                        class="form-control text-right" value="$ 5.000">
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label for="anualidad">Anualidad base</label>
                                                     <input type="input" name="anualidad" id="anualidad"
-                                                        class="form-control" value="$ 5000">
+                                                        class="form-control text-right" value="$ 60.000">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-lg-6">
+                                                    <label for="matricula_final">Matrícula c/ descuentos</label>
+                                                    <input type="input" name="matricula_final" id="matricula_final"
+                                                        class="form-control text-right" value="$ 3.500" disabled>
+                                                </div>
+                                                <div class="form-group col-lg-6">
+                                                    <label for="anualidad_final">Anualidad proyectada
+                                                        c/descuentos</label>
+                                                    <input type="input" name="anualidad_final" id="anualidad_final"
+                                                        class="form-control text-right" value="$ 43.200" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-lg-9">
+                                                </div>
+                                                <div class="form-group col-lg-3">
+                                                    <label for="cuota">Cuota</label>
+                                                    <input type="input" name="cuota" id="cuota"
+                                                        class="form-control text-right" value="$ 4.200" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-lg-6">
+                                                </div>
+                                                <div class="form-group col-lg-3">
+                                                    <label for="aumento">Aumento</label>
+                                                    <input type="input" name="aumento" id="aumento"
+                                                        class="form-control text-right" value="$ 200">
+                                                </div>
+                                                <div class="form-group col-lg-3">
+                                                    <label for="cuota_aumento">Cuota c/aumento</label>
+                                                    <input type="input" name="cuota_aumento" id="cuota_aumento"
+                                                        class="form-control text-right" value="$ 4.400" disabled>
                                                 </div>
                                             </div>
                                         </form>
                                     </div>
-                                    <div class="col col-md-6">
-                                        <h2>Descuentos</h2>
+                                    <div class="col-md-6">
+                                        <h2>Descuentos <span class="badge badge-pill badge-success">½</span></h2>
+                                        <div class="card bg-light shadow-sm mb-1">
+                                            <div class="card-body">
+                                                Descuento <b>porcentual</b> de <b>30%</b> sobre <b>matrícula</b>
+                                                <b>base</b> por
+                                                <b>inscripción en período Julio/Agosto</b>.
+                                            </div>
+                                        </div>
+                                        <div class="card bg-light shadow-sm mb-1">
+                                            <div class="card-body">
+                                                Descuento <b>porcentual</b> de <b>30%</b> sobre <b>anualidad</b>
+                                                <b>base</b> por
+                                                <b>inscripción en período Julio/Agosto</b>.
+                                            </div>
+                                        </div>
+                                        <form class="form card border-success shadow-sm p-3">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="monto">Sobre</label>
+                                                    <select name="monto" id="monto" class="form-control custom-select">
+                                                        <option value="anualidad">Anualidad</option>
+                                                        <option value="matricula">Matricula</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="aplicable">Base o parcial</label>
+                                                    <select name="aplicable" id="aplicable"
+                                                        class="form-control custom-select">
+                                                        <option value="base">Base</option>
+                                                        <option value="parcial">Parcial</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="tipo">Tipo</label>
+                                                    <select name="tipo" id="tipo" class="form-control custom-select">
+                                                        <option value="anualidad">Porcentual</option>
+                                                        <option value="matricula">Fijo</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="valor">Valor</label>
+                                                    <input type="input" name="valor" id="valor"
+                                                        class="form-control text-right" value="20">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-12">
+                                                    <label for="concepto">Concepto</label>
+                                                    <input type="input" name="concepto" id="concepto"
+                                                        class="form-control" value="Pariente directo">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col-md-12 text-right">
+                                                    <button class="btn btn-sm btn-primary">Aplicar</button>
+                                                    <button class="btn btn-sm btn-light">Descartar</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <hr>
+                                        <div class="col-md-12 text-center">
+                                            <a href="#" class="btn btn-sm btn-success text-center">Añadir descuento
+                                                <i class="fa fa-plus-circle"></i></a>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
