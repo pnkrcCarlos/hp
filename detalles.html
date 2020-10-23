@@ -190,9 +190,10 @@
                                 aria-controls="cuotas" aria-selected="false">Cuotas</a>
                         </li>
                     </ul>
+
+
                     <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active pt-3" id="responsables" role="tabpanel"
-                            aria-labelledby="responsables-tab">
+                        <div class="tab-pane fade show active pt-3" id="responsables" role="tabpanel">
                             <div class="container">
                                 <div class="row">
                                     <div class="col col-md-10">
@@ -230,47 +231,124 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade pt-3" id="plan" role="tabpanel" aria-labelledby="plan-tab">
-                            <div class="container">
-                                <form class="form">
 
-                                </form>
+                        <div class="tab-pane fade pt-3" id="plan" role="tabpanel">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <form action="" class="form">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-4">
+                                                    <label for="lectivo">Año lectivo</label>
+                                                    <select name="lectivo" id="lectivo"
+                                                        class="form-control custom-select" disabled>
+                                                        <option value="2020">2020</option>
+                                                        <option value="2021">2021</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label for="promocion">Promoción</label>
+                                                    <select name="promocion" id="promocion"
+                                                        class="form-control custom-select" disabled>
+                                                        <option value="sin">Sin promoción</option>
+                                                        <option value="julio_agosto">Julio/Agosto</option>
+                                                        <option value="setiembre_octubre">Setiembre/Octubre</option>
+                                                        <option value="noviembre_diciembre">Noviembre/Diciembre</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label for="qts">Cuotas</label>
+                                                    <select name="qts" id="qts" class="form-control custom-select"
+                                                        disabled>
+                                                        <option value="10">10</option>
+                                                        <option value="12">12</option>
+                                                        <option value="14">14</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="matricula">Matrícula base</label>
+                                                    <input type="input" name="matricula" id="matricula"
+                                                        class="form-control text-right" value="$ 5.000" disabled>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="anualidad">Anualidad base</label>
+                                                    <input type="input" name="anualidad" id="anualidad"
+                                                        class="form-control text-right" value="$ 60.000" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-lg-6">
+                                                    <label for="matricula_final">Matrícula c/ descuentos</label>
+                                                    <input type="input" name="matricula_final" id="matricula_final"
+                                                        class="form-control text-right" value="$ 3.500" disabled>
+                                                </div>
+                                                <div class="form-group col-lg-6">
+                                                    <label for="anualidad_final">Anualidad proyectada
+                                                        c/descuentos</label>
+                                                    <input type="input" name="anualidad_final" id="anualidad_final"
+                                                        class="form-control text-right" value="$ 43.200" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-lg-9">
+                                                </div>
+                                                <div class="form-group col-lg-3">
+                                                    <label for="qt">Cuota</label>
+                                                    <input type="input" name="qt" id="qt"
+                                                        class="form-control text-right" value="$ 4.200" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-lg-6">
+                                                </div>
+                                                <div class="form-group col-lg-3">
+                                                    <label for="aumento">Aumento</label>
+                                                    <input type="input" name="aumento" id="aumento"
+                                                        class="form-control text-right" value="$ 200">
+                                                </div>
+                                                <div class="form-group col-lg-3">
+                                                    <label for="cuota_aumento">Cuota c/aumento</label>
+                                                    <input type="input" name="cuota_aumento" id="cuota_aumento"
+                                                        class="form-control text-right" value="$ 4.400" disabled>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3>Descuentos</h3>
+                                        <div class="card bg-light shadow-sm mb-1">
+                                            <div class="card-body">
+                                                Descuento <b>porcentual</b> de <b>30%</b> sobre <b>matrícula</b>
+                                                <b>base</b> por
+                                                <b>inscripción en período Julio/Agosto</b>.
+                                            </div>
+                                        </div>
+                                        <div class="card bg-light shadow-sm mb-1">
+                                            <div class="card-body">
+                                                Descuento <b>porcentual</b> de <b>30%</b> sobre <b>anualidad</b>
+                                                <b>base</b> por
+                                                <b>inscripción en período Julio/Agosto</b>.
+                                            </div>
+                                        </div>
+                                        <div class="card bg-light shadow-sm mb-1">
+                                            <div class="card-body">
+                                                Descuento <b>porcentual</b> de <b>30%</b> sobre <b>anualidad</b>
+                                                <b>c/descuentos</b> por
+                                                <b>familiar directo</b>.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade pt-3" id="cuotas" role="tabpanel" aria-labelledby="cuotas-tab">
+
+                        <div class="tab-pane fade pt-3" id="cuotas" role="tabpanel">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-10">
-                                        <table class="table table-borderless table-hover table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">#</th>
-                                                    <th scope="col">First</th>
-                                                    <th scope="col">Last</th>
-                                                    <th scope="col">Handle</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">2</th>
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">3</th>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        wip
                                     </div>
                                     <div class="col col-md-2 pt-3">
                                         <a class="btn btn-primary btn-block">Nuevo pago</a>
